@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaXus Labs | Venture Studio</title>
+    <meta name="description" content="PaXus Labs is a venture studio building the intelligent infrastructure layer that India's next decade runs on.">
+    <meta name="keywords" content="PaXus Labs, venture studio, Bengaluru, Kanpur, India, AI, intelligent infrastructure, Vivacity, ORCA, ByteForge, God, IIT Kanpur">
+    <meta name="author" content="PaXus Labs">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://paxus.in/">
+    <meta property="og:title" content="PaXus Labs | Venture Studio">
+    <meta property="og:description" content="Building the intelligent infrastructure layer that India's next decade runs on.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://paxus.in/">
+    <meta property="twitter:title" content="PaXus Labs | Venture Studio">
+    <meta property="twitter:description" content="Building the intelligent infrastructure layer that India's next decade runs on.">
+
+    <link rel="canonical" href="https://paxus.in/">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-main: #000000;
+            --text-muted: #4a4a4a;
+            --accent: #000000;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-weight: 300;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            font-size: 19px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            padding: 8vh 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 680px;
+            width: 100%;
+            animation: fadeIn 1s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1, h2, h3 {
+            font-weight: 400;
+            color: var(--accent);
+            letter-spacing: -0.04em;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+            letter-spacing: -0.05em;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-top: 3rem;
+            margin-bottom: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-main);
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 400;
+            margin-top: 1.5rem;
+            margin-bottom: 0.3rem;
+            letter-spacing: -0.02em;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            color: var(--text-main);
+        }
+
+        .lead {
+            font-size: 1.4rem;
+            font-weight: 300;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            line-height: 1.5;
+            letter-spacing: -0.02em;
+        }
+
+        a {
+            color: var(--text-main);
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            transition: all 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--text-muted);
+        }
+
+        strong {
+            font-weight: 500;
+            color: var(--accent);
+        }
+        
+        em {
+            font-style: italic;
+            color: var(--text-main);
+        }
+
+        ul {
+            list-style-type: none;
+            margin-bottom: 1.5rem;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        ul li::before {
+            content: "·";
+            position: absolute;
+            left: 0;
+            color: var(--text-main);
+            font-weight: bold;
+        }
+
+        .project {
+            margin-bottom: 2rem;
+        }
+
+        .project p:last-child {
+            margin-bottom: 0;
+        }
+
+        .project-link {
+            font-size: 1rem;
+            margin-top: 0.3rem;
+            display: inline-block;
+        }
+
+        .exited-text {
+            display: inline-block;
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            margin-bottom: 0.3rem;
+        }
+
+        blockquote {
+            margin: 2rem 0;
+            padding-left: 1.5rem;
+            border-left: 2px solid #000000;
+            font-size: 1.4rem;
+            font-weight: 300;
+            line-height: 1.4;
+            color: var(--accent);
+            letter-spacing: -0.02em;
+        }
+
+        .footer {
+            margin-top: 3rem;
+            font-size: 0.95rem;
+            color: var(--text-main);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer p {
+            margin-bottom: 0;
+            color: var(--text-main);
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 768px) {
+            body {
+                padding: 5vh 20px;
+            }
+            .footer {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+
+    <!-- Structured Data for SEO / AI Scrapers -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "PaXus Labs",
+      "url": "https://paxus.in",
+      "description": "Venture studio based in Bengaluru building the intelligent infrastructure layer that India's next decade runs on.",
+      "foundingDate": "2023",
+      "founders": [
+        {
+          "@type": "Person",
+          "name": "Aditya Bhatia"
+        },
+        {
+          "@type": "Person",
+          "name": "Tanish Anand",
+          "url": "https://tanishanand.dev"
+        },
+        {
+          "@type": "Person",
+          "name": "Pavitra Kushwaha",
+          "url": "https://pavitrakushwaha.dev"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bengaluru",
+        "addressRegion": "Karnataka",
+        "addressCountry": "India"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "contact@paxus.in",
+        "contactType": "general inquiry"
+      },
+      "sponsor": {
+        "@type": "Organization",
+        "name": "God"
+      },
+      "brand": [
+        {
+          "@type": "Brand",
+          "name": "Vivacity",
+          "url": "https://tryvivacity.com"
+        },
+        {
+          "@type": "Brand",
+          "name": "ORCA",
+          "url": "https://orcai.cfd"
+        },
+        {
+          "@type": "Brand",
+          "name": "ByteForge",
+          "url": "https://byteforge.space"
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>PaXus Labs</h1>
+            <p class="lead">
+                We started in a room in Kanpur with too many ideas and not enough money.<br>
+                We still haven't stopped.
+            </p>
+        </header>
+
+        <section id="story">
+            <h2>The Story</h2>
+            <article>
+                <p>Honestly, it started out of frustration.</p>
+                <p>We were students at a time when everyone around us was preparing for placements, internships, the usual path. Nothing wrong with that. But we kept running into the same feeling that the tools being built for India, the software, the AI, the platforms, they were being built by people who had never really lived here. Not in Kanpur. Not in the tier-2 cities where most of the country actually lives.</p>
+                <p>The products felt foreign. The assumptions were wrong. The AI didn't understand the problems.</p>
+                <p>So we started building.</p>
+                <p>Not with a grand plan. Not with a thesis written on a whiteboard. We started building because we couldn't find what we were looking for, and at some point you stop looking and start making.</p>
+                <p>The first thing we built didn't work. The second thing almost did. By the third, we had paying customers and a lot of very uncomfortable conversations about what exactly we were trying to do.</p>
+                <p>That's when PaXus became real, not as a company, but as a commitment. Three of us (me, Aditya, and Tanish) decided we weren't interested in building one product and hoping it worked. We were interested in something bigger: <strong>building the infrastructure layer that India's next decade runs on, across whatever verticals needed it most.</strong></p>
+                <p>That sounds ambitious. It is.</p>
+                <p>But the model has a name. Bill Gross started doing it in 1996 testing multiple ideas under one roof, killing the ones that don't work, and doubling down on the ones that do. He called it a venture studio. We just called it the only honest way we knew how to build.</p>
+                <p>What we've built so far is not polished. Some of it is messy. All of it is real.</p>
+                
+                <p><strong>Vivacity:</strong> we watched edtech in India spend billions on content that looked like it was made in 2009. Talking heads, static slides, zero engagement. We built AI that generates animated, curriculum-grade video from a text prompt. The kind of content that actually teaches. Targeting the platforms serving hundreds of millions of Indian students.</p>
+                
+                <p><strong>ORCA:</strong> In 2025, two billion people use smartphones, but they're locked out of digital agency. A Silicon Valley engineer automates their life in hours using APIs, webhooks, Zapier, and Python. They leverage complexity. Meanwhile, an Indian grandmother, a Brazilian taxi driver, or an Indonesian shop owner—who rely entirely on apps like WhatsApp or Facebook—have no agency. They switch between 12 apps. They fill out forms. They wait. They call customer support. This is not a convenience gap. It's an inequality gap. The technology that powers the world was built by engineers, for engineers. ORCA inverts this. We build technology by humans, for humans. Our mission is to empower 2 billion non-technical users with AI-powered agency, while maintaining absolute respect for their privacy, autonomy, and data.</p>
+                
+                <p><strong>ByteForge:</strong> we noticed the students building the next generation of Indian tech had nowhere to actually learn from each other. Not in a classroom. In the messy, collaborative way that real building happens. 4,500 members later, we have an MOU with IIT Kanpur Gymkhana and more demand than we know what to do with.</p>
+            </article>
+
+            <article style="margin-top: 3rem;">
+                <p>Are these connected?</p>
+                <p>Yes. In the way that matters.</p>
+                <p>They're all answers to the same question: <em>what does intelligent software look like when it's built for India, by people from India, who aren't leaving?</em></p>
+                <p>We are not a startup that pivoted three times and landed somewhere safe. We are a venture studio (building, testing, killing, doubling down) with a singular obsession at the center of everything.</p>
+                
+                <blockquote>
+                    India's next infrastructure will be intelligent.<br>
+                    And it will be built from within.
+                </blockquote>
+
+                <p>We're backed by God.<br>
+                Before in Kanpur, Uttar Pradesh. Now in Bengaluru, India.</p>
+                <p>We are three founders who are not waiting for the right moment.</p>
+                <p>We decided a long time ago that the right moment is now.</p>
+            </article>
+        </section>
+
+        <section id="projects">
+            <h2>What We're Building</h2>
+            
+            <div class="project">
+                <h3>VIVACITY</h3>
+                <p>AI-generated animated video for Indian edtech. Built for scale. Currently in B2B conversations with the largest learning platforms in the country.</p>
+                <a href="https://tryvivacity.com" target="_blank" rel="noopener noreferrer" class="project-link">tryvivacity.com</a>
+            </div>
+
+            <div class="project">
+                <h3>ORCA</h3>
+                <div class="exited-text">Exited - June 2026</div>
+                <p>Agentic Android control through WhatsApp and Telegram. A phone that does things for you, through the apps you already use. Revenue generating.</p>
+                <a href="https://orcai.cfd" target="_blank" rel="noopener noreferrer" class="project-link">orcai.cfd</a>
+            </div>
+
+            <div class="project">
+                <h3>BYTEFORGE</h3>
+                <p>A technical community for student builders. 4,500+ members, one of North India's largest, IIT Kanpur collaborated. The operating system for India's next generation of obsessed founders.</p>
+                <a href="https://byteforge.space" target="_blank" rel="noopener noreferrer" class="project-link">byteforge.space</a>
+            </div>
+        </section>
+
+        <section id="people">
+            <h2>The People</h2>
+            <p>We are three co-founders who met through building and decided not to stop.</p>
+            <ul>
+                <li>AI and systems architecture (<a href="https://pavitrakushwaha.dev" target="_blank" rel="noopener noreferrer">Pavitra Kushwaha</a>)</li>
+                <li>Hardware, embedded systems, infrastructure (<a href="https://tanishanand.dev" target="_blank" rel="noopener noreferrer">Tanish Anand</a>)</li>
+                <li>Operations, community, growth (Aditya Bhatia)</li>
+            </ul>
+            <p>We don't list titles because titles suggest we've figured out who does what. We're still figuring it out. Together. That's the honest answer.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Close</h2>
+            <p>We started PaXus because we believed that the most important companies of the next decade will be built in places that don't look like Silicon Valley yet.</p>
+            <p>Kanpur is one of those places.</p>
+            <p>If you're a founder who thinks the same, or an investor who's willing to bet on it, we'd like to talk.</p>
+            <p style="margin-top: 1.5rem;"><a href="mailto:contact@paxus.in" style="font-size: 1.25rem; font-weight: 400; text-decoration: underline; text-underline-offset: 6px;">contact@paxus.in</a></p>
+        </section>
+
+        <footer class="footer">
+            <p><strong>PaXus Labs</strong> · Bengaluru, India</p>
+            <p>Backed by God</p>
+        </footer>
+    </main>
+</body>
+</html>
